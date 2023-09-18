@@ -1,0 +1,146 @@
+.img-left {
+  width: 70%;
+  height: 100%;
+}
+
+.dot-active {
+  background-color: #00addb;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+
+.dot-inactive {
+  background-color: #3d4346;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+
+.zoom {
+  filter: brightness(50%);
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+.dotted-line {
+  display: flex;
+  justify-content: center;
+  border: none;
+  color: rgb(7, 189, 245);
+  margin: px 60px;
+  margin-bottom: 20px;
+}
+.horizontalline{
+  border-top: 15px dotted rgb(122, 116, 116);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  height: 3px;
+  width: 15%;
+}
+
+@media screen and (max-width: 930px) {
+  body {
+    overflow-x: hidden;
+  }
+  .custom-card {
+    display: grid;
+    box-sizing: border-box;
+    gap: 20px;
+    grid-template-columns: repeat(2, 2fr);
+    /* width: 100%; */
+  }
+  .custom-inner {
+    width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .custom-card {
+    display: grid;
+    box-sizing: border-box;
+    gap: 20px;
+    grid-template-columns: repeat(1, 2fr);
+    /* width: 100%; */
+  }
+  .custom-inner {
+    width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 850px) {
+  .custom-banner {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 110%;
+    width: 100%;
+  }
+  .carousel img {
+    /* box-sizing: border-box; */
+    margin-right: 100px;
+    height: 100%;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .img-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .product-text {
+    font-size: small;
+  }
+  .button-text {
+    font-size: x-small;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .custom-banner {
+    box-sizing: border-box;
+    width: 120%;
+    height: 110%;
+    display: flex;
+    justify-content: center;
+  }
+  .carousel {
+    box-sizing: border-box;
+    height: 50%;
+    width: 50%;
+  }
+  .img-right img {
+    display: none;
+    /* justify-content: right;
+    box-sizing: border-box;
+    height: 100%;
+    max-height: 100%;
+    max-width: 55%;
+    width: 100%; */
+  }
+}
+
+
+@media screen and (min-width: 1600px) and (max-width: 2700px) {
+  .custom-banner {
+    height: 100%;
+    width: 100%;
+  }
+  .img-left {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+  }
+  
+}
